@@ -71,7 +71,62 @@ blockchain2023 homework
 
 ![image](./images/01.png)
 
-2. 
+2. 领取空头积分
+
+![image](./images/02.png)
+![image](./images/03.png)
+
+3. 发行汽车NFT
+
+![image](./images/04.png)
+![image](./images/05.png)
+
+4. 查看我所拥有的汽车NFT
+
+![image](./images/06.png)
+![image](./images/07.png)
+
+5. 再多发行几个汽车NFT，查看可借车辆
+
+![image](./images/08.png)
+![image](./images/09.png)
+
+6. 查看`汽车0`的信息，只有拥有者，无借用者
+
+![image](./images/10.png)
+
+7. 借用`汽车0` 5个小时
+
+![image](./images/11.png)
+
+8. 再查看`汽车0`的信息，此时既有拥有者，又有借用者
+
+**此时拥有者与借用者为同一人，故积分无变化**
+
+![image](./images/12.png)
+![image](./images/13.png)
+
+9. 再次查看可借车辆，发现汽车0不在列表中了
+
+![image](./images/14.png)
+
+10. 此时切换用户，借用`汽车1` 5个小时
+
+![image](./images/15.png)
+
+11. 再查看`汽车1`的信息，拥有者为上一用户，借用者为当前用户
+
+**此时积分发生变化，减少了5积分**
+
+![image](./images/16.png)
+
+12. 再次查看可借车辆，发现列表中只剩`汽车2`
+
+![image](./images/17.png)
+
+13. 切换回上一用户，发现增加了5积分
+
+![image](./images/18.png)
 
 ## 参考内容
 
