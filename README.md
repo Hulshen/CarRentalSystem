@@ -69,7 +69,7 @@ blockchain2023 homework
 
 1. 主页面
 
-![image](https://github.com/Hulshen/CarRentalSystem/tree/main/images/01.png)
+![image](./images/01.png)
 
 2. 
 
