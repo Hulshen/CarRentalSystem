@@ -11,10 +11,8 @@ contract CarRentalSystem is ERC4907 {
     uint256 carPrice = 1 ether;
     uint256 rentPrice = 1;
 
-    event CarIssued(uint256 carTokenId);
     event CarOwned(uint256[]);
     event CarAvailable(uint256[]);
-    event CarRented(uint256 carTokenId, address renter, uint256 startTime, uint256 duration);
 
     struct Car {
         address owner;
@@ -34,7 +32,6 @@ contract CarRentalSystem is ERC4907 {
         cars[carTokenId].owner = msg.sender;
         cars[carTokenId].rentDDL = block.timestamp;
         carList[msg.sender].push(carTokenId);
-        emit CarIssued(carTokenId);
         carTokenId++;
     }
 
@@ -77,6 +74,5 @@ contract CarRentalSystem is ERC4907 {
         cars[carId].rentDDL = expire;
         setUser(carId, msg.sender, uint64(expire));
         myERC20.transferFrom(msg.sender, cars[carId].owner, cost);
-        emit CarRented(carId, msg.sender, block.timestamp, expire);
     }
 }
