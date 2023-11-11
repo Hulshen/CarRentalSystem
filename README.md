@@ -4,35 +4,37 @@ blockchain2023 homework
 
 ## 如何运行
 
-1. 在本地启动ganache应用。
+1. 在本地启动ganache应用，将端口号设为8545
 
-2. 在 `./contracts` 中安装需要的依赖，运行如下的命令：
+2. 将ganache中生成的测试账户的私钥复制到`./contracts/hardhat.config.ts`文件的`accounts`中
+
+3. 在 `./contracts` 中安装需要的依赖，运行如下的命令：
 
     ```bash
     npm install
     ```
 
-3. 在 `./contracts` 中编译合约，运行如下的命令：
+4. 在 `./contracts` 中编译合约，运行如下的命令：
 
     ```bash
     npx hardhat compile
     ```
 
-4. 将合约部署到ganache本地链上，在 `./contracts` 中运行如下的命令
+5. 将合约部署到ganache本地链上，在 `./contracts` 中运行如下的命令
 
    ```bash
     npx hardhat run ./scripts/deploy.ts --network ganache
     ```
 
-5. 将得到的合约地址复制到 `frontend/src/utils/contract-address.json` 中
+6. 将得到的合约地址复制到 `frontend/src/utils/contract-address.json` 中
 
-6. 在 `./frontend` 中安装需要的依赖，运行如下的命令：
+7. 在 `./frontend` 中安装需要的依赖，运行如下的命令：
 
     ```bash
     npm install
     ```
 
-7. 在 `./frontend` 中启动前端程序，运行如下的命令：
+8. 在 `./frontend` 中启动前端程序，运行如下的命令：
 
     ```bash
     npm run start
@@ -71,7 +73,7 @@ blockchain2023 homework
 
 ![image](./images/01.png)
 
-2. 领取空头积分
+2. 领取空投积分
 
 ![image](./images/02.png)
 ![image](./images/03.png)
