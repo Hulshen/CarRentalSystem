@@ -46,7 +46,7 @@ const CarRentalSystemPage = () => {
             }
         }
         initCheckAccounts()
-    }, [])
+    }, [account])
 
     useEffect(() => {
         const getAccountInfo = async () => {
